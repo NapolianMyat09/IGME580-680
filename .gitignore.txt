@@ -26,6 +26,10 @@ vs/
 
 /.gradle/
 
+#My additions
+/Library/Bee/
+
+
 /ExportedObj/
 /.consulo/
 /*.csproj
