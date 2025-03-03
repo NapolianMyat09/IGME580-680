@@ -27,10 +27,10 @@ vs/
 /.gradle/
 
 #My additions
-Library/Bee/
-ArtifactDB/
-ilpp.pid
-SourceAssetDB/
+/Library/Bee/
+/ArtifactDB/
+/ilpp.pid
+/SourceAssetDB/
 
 
 /ExportedObj/
