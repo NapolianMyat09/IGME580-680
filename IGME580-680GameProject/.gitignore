@@ -28,6 +28,9 @@ vs/
 
 #My additions
 Library/Bee/
+ArtifactDB/
+ilpp.pid
+SourceAssetDB/
 
 
 /ExportedObj/
