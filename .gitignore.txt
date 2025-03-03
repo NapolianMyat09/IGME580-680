@@ -27,7 +27,7 @@ vs/
 /.gradle/
 
 #My additions
-/Library/Bee/
+Library/Bee/
 
 
 /ExportedObj/
