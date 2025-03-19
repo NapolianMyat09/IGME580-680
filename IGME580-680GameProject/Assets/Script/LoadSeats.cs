@@ -51,7 +51,7 @@ public class LoadSeats : MonoBehaviour
                 {
                     position = new Vector3(xValueInitial, yValue,  -zValue); //since zValue was already incremented for the right, left just has to become negative
                 }
-                Debug.Log(position); //test
+                //Debug.Log(position); //test
                 Instantiate(propPrefab, position, frontFacing, parentObject.transform);
             }
             xValueInitial += 1; //increment postion for new row

@@ -12,6 +12,7 @@ public class OpenUI : MonoBehaviour
     void Start()
     {
         triggerObj.SetActive(false);
+        Debug.Log("Set Inactive");
     }
 
     // Update is called once per frame
@@ -19,21 +20,20 @@ public class OpenUI : MonoBehaviour
     {
         
     }
-
-    void OnCloseProximity(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player")) // Ensure only the player triggers it
         {
-            triggerObj.SetActive(true);
+            triggerObj.SetActive(true); // Show the UI
         }
     }
-    void OnCloseProximityExit(Collider other)
+
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            triggerObj.SetActive(false);
+            triggerObj.SetActive(false); // Hide the UI
         }
     }
-
 
 }
