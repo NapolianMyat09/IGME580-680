@@ -119,7 +119,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1556008198508951618}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6069018008398520489}
+        m_TargetAssemblyTypeName: GetParentFunction, Assembly-CSharp
+        m_MethodName: SwitchInstrumentPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2836398028824093249
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +144,7 @@ GameObject:
   - component: {fileID: 5176190804228741901}
   - component: {fileID: 408743172604776440}
   - component: {fileID: 2051339521271154717}
+  - component: {fileID: 6069018008398520489}
   m_Layer: 5
   m_Name: Panel_Prefab
   m_TagString: Untagged
@@ -217,6 +230,18 @@ MonoBehaviour:
   _stereoPanValueText: {fileID: 511832878657498705}
   _spatialBlendValueText: {fileID: 9009893005435317114}
   _reverbZoneMixValueText: {fileID: 5103344030153454135}
+--- !u!114 &6069018008398520489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836398028824093249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8621fad899ef7499406494f6f1a0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4043018127518668610
 GameObject:
   m_ObjectHideFlags: 0
