@@ -18,9 +18,9 @@ public class NavigateCanvas : MonoBehaviour
         GameObject topParent = transform.parent == null ? gameObject : transform.root.gameObject; //get the root parent
         mainCanvas = topParent.transform.Find("MainCanvas").gameObject;
         buttonCanvas = topParent.transform.Find("ButtonCanvas").gameObject;
-        instrumentPanel = mainCanvas.transform.Find("Background/InstrumentsPanel").gameObject;
-        bassDrumPanel = mainCanvas.transform.Find("Background/BassDrumPanel").gameObject;
-        kickDrumPanel = mainCanvas.transform.Find("Background/KickDrumPanel").gameObject;
+        instrumentPanel = mainCanvas.transform.Find("InstrumentsPanel").gameObject;
+        bassDrumPanel = mainCanvas.transform.Find("BassDrumPanel").gameObject;
+        kickDrumPanel = mainCanvas.transform.Find("KickDrumPanel").gameObject;
 
 
         Exit();
