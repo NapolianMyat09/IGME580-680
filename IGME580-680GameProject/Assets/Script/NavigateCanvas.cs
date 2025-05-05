@@ -10,6 +10,10 @@ public class NavigateCanvas : MonoBehaviour
     private GameObject bassDrumPanel;
     private GameObject kickDrumPanel;
     private GameObject crashCymbalPanel;
+    private GameObject snareDrumPanel;
+    private GameObject rideCymbalPanel;
+    private GameObject floorTomPanel;
+
 
 
     void Start()
@@ -22,6 +26,10 @@ public class NavigateCanvas : MonoBehaviour
         bassDrumPanel = mainCanvas.transform.Find("BassDrumPanel").gameObject;
         kickDrumPanel = mainCanvas.transform.Find("KickDrumPanel").gameObject;
         crashCymbalPanel = mainCanvas.transform.Find("CrashCymbalPanel").gameObject;
+        snareDrumPanel = mainCanvas.transform.Find("SnareDrumPanel").gameObject;
+        floorTomPanel = mainCanvas.transform.Find("FloorTomPanel").gameObject;
+        rideCymbalPanel = mainCanvas.transform.Find("RideCymbalPanel").gameObject;
+
 
         Exit();
     }
@@ -45,6 +53,9 @@ public class NavigateCanvas : MonoBehaviour
         bassDrumPanel.SetActive(false);
         kickDrumPanel.SetActive(false);
         crashCymbalPanel.SetActive(false);
+        snareDrumPanel.SetActive(false); 
+        floorTomPanel.SetActive(false);
+        rideCymbalPanel?.SetActive(false);
 
     }
 
@@ -54,7 +65,9 @@ public class NavigateCanvas : MonoBehaviour
         bassDrumPanel.SetActive(true);
         kickDrumPanel.SetActive(false);
         crashCymbalPanel.SetActive(false);
-
+        snareDrumPanel.SetActive(false);
+        floorTomPanel.SetActive(false);
+        rideCymbalPanel?.SetActive(false);
     }
     public void SwitchKickDrumPanel()
     {
@@ -62,7 +75,9 @@ public class NavigateCanvas : MonoBehaviour
         bassDrumPanel.SetActive(false);
         kickDrumPanel.SetActive(true);
         crashCymbalPanel.SetActive(false);
-
+        snareDrumPanel.SetActive(false);
+        floorTomPanel.SetActive(false);
+        rideCymbalPanel?.SetActive(false);
     }
     public void SwitchCrashCymbalPanel()
     {
@@ -70,6 +85,41 @@ public class NavigateCanvas : MonoBehaviour
         bassDrumPanel.SetActive(false);
         kickDrumPanel.SetActive(false);
         crashCymbalPanel.SetActive(true);
+        snareDrumPanel.SetActive(false);
+        floorTomPanel.SetActive(false);
+        rideCymbalPanel?.SetActive(false);
+    }
+    public void SwitchSnareDrumlPanel()
+    {
+        instrumentPanel.SetActive(false);
+        bassDrumPanel.SetActive(false);
+        kickDrumPanel.SetActive(false);
+        crashCymbalPanel.SetActive(false);
+        snareDrumPanel.SetActive(true);
+        floorTomPanel.SetActive(false);
+        rideCymbalPanel?.SetActive(false);
+    }
+
+    public void SwitchFloorTomPanel()
+    {
+        instrumentPanel.SetActive(false);
+        bassDrumPanel.SetActive(false);
+        kickDrumPanel.SetActive(false);
+        crashCymbalPanel.SetActive(false);
+        snareDrumPanel.SetActive(false);
+        floorTomPanel.SetActive(true);
+        rideCymbalPanel?.SetActive(false);
+    }
+
+    public void SwitchRideCymbalPanel()
+    {
+        instrumentPanel.SetActive(false);
+        bassDrumPanel.SetActive(false);
+        kickDrumPanel.SetActive(false);
+        crashCymbalPanel.SetActive(false);
+        snareDrumPanel.SetActive(false);
+        floorTomPanel.SetActive(false);
+        rideCymbalPanel?.SetActive(true);
     }
 
 }
